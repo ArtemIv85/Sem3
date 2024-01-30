@@ -6,7 +6,26 @@
 // [1 3 4 19 3], 8 => Нет
 // [-4 3 4 1], 3 => Да 
 
+using System.Data;
 
+int[] array = { 1, 3, 4, 8, 3 };
+int digit =8;
+int result=0;
+foreach (int i in array )
+    {
+        if (i == digit)
+        {
+            result=1;
+        }
+    }
+if (result == 1)
+{
+    Console.WriteLine("ДА");
+}
+else 
+{
+    Console.WriteLine("Нет");
+}
 
 // Задание 2. Работа в сессионных залах
 // Задайте массив из 10 элементов, заполненный числами из
